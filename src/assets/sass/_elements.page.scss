@@ -1,0 +1,49 @@
+//--------------------------------------------------------------------------------------------------------------------------------------
+// HTML STYLES
+//--------------------------------------------------------------------------------------------------------------------------------------
+
+/*
+Set basic styles for HTML top level element.
+*/
+
+/*
+[1] Set the default `font-size` and `line-height` for the entire project, sourced from our default variables.
+     The `font-size` is calculated to exist in ems so the user's browser font-size is respected if changed.
+*/
+
+
+html {
+	font-size: ($global-font-size / 16px) * 1em; /* [1] */
+	line-height: $global-line-height; /* [1] */
+	overflow-y: scroll;
+	min-height: 100%;
+	background: linear-gradient(135deg, rgba(255,211,77,1) 0%, rgba(255,86,64,1) 100%);
+	background-size: 100%;
+}
+
+body {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	max-width:100%;
+	font-family:'Roboto', sans-serif;
+	min-height:100vh;
+	font-size:20px;
+	font-weight:300;
+	color: color('dark-grey');
+	margin:30px 0 30px 0;
+}
+
+#root {
+	max-width:100%;
+}
+
+/* Makes user unable to scroll if applied to body */
+.is-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	/* Makes scrolling perform much better with inputs in modals */
+	-webkit-overflow-scrolling : touch
+}

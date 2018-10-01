@@ -1,0 +1,24 @@
+.t-alpha {
+	font-size:32px;
+	line-height:1;
+}
+
+.t-beta {
+	font-size:18px;
+}
+
+.t-charlie {
+	font-size:14px;
+}
+
+@include mq('md') {
+
+	.t-alpha {
+		font-size:48px;
+	}
+
+	.t-beta {
+		font-size:24px;
+	}
+
+}

@@ -1,0 +1,32 @@
+.c-call-to-action {
+	transform: translate3d(0,0,0);
+	overflow:hidden;
+}
+
+.c-call-to-action__inner {
+	padding:30px 20px;
+}
+
+.c-call-to-action__inner--grey {
+	background-color:color('light-grey');
+	border-top: 1px solid color('grey');
+}
+
+.c-call-to-action__list {
+	text-align:center;
+	background-color:color('light-grey');
+	border: 1px solid color('grey');
+	padding:10px;
+	border-radius:10px;
+	li {
+		border-bottom:1px solid color('grey');
+		padding:5px 0;
+		&:first-child {
+			padding-top:0;
+		}
+		&:last-child {
+			border-bottom:0;
+			padding-bottom:0;
+		}
+	}
+}

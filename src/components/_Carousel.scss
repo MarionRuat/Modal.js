@@ -1,0 +1,34 @@
+.c-carousel {
+	margin-bottom:15px;
+}
+
+.c-carousel__arrow {
+	width:20px;
+	height:13px;
+	cursor:pointer;
+	user-select: none;
+	position:relative;
+	top:-1px;
+}
+
+.c-carousel__arrow--right {
+	transform:rotate(-90deg);
+}
+
+.c-carousel__arrow--left {
+	transform:rotate(90deg);
+}
+
+.c-carousel__numbers {
+	position:relative;
+	bottom:1px;
+}
+
+.c-carousel__divider {
+	display:inline-block;
+	padding:0 4px;
+}
+
+.c-carousel.has-loaded .slick-track {
+	transition: transform 0.5s;
+}

@@ -1,0 +1,17 @@
+.c-input__label {
+	display:inline-block;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+.c-input__field {
+	font-family:inherit;
+	font-size:inherit;
+	border: 1px solid color('grey');
+	height:55px;
+	display:flex;
+	align-items:center;
+	padding:0 15px;
+	width:100%;
+	background-color: white;
+}
